@@ -68,6 +68,7 @@
 
 // console.log(result);
 
+
 //Task 4
 // Отримуйте від користувача число (кількість хвилин) через prompt
 // і виводьте у консоль рядок у форматі годин та хвилин.
@@ -76,11 +77,80 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart#examples
 
 
-// const globalMinutes = prompt("Введіть число");
-// const hours = Math.floor(globalMinutes / 60);
+// const minutes = prompt("Введіть число");
+// const hours = Math.floor(minutes / 60);
 // const modifiedHours = String(hours).padStart(2, 0);
-// const minutes = globalMinutes % 60;
-// const modifiedMinutes = String(minutes).padStart(2, 0);
+// const min = minutes % 60;
+// const modifiedMinutes = String(min).padStart(2, 0);
 
 // const time = `${modifiedHours}:${modifiedMinutes}`;
 // console.log(time);
+
+
+// Task 5
+
+// Напишіть код, який запитуватиме у користувача
+// логін за допомогою prompt і виводить результат в консоль браузера
+// Після цього додайте перевірку введеного користувачем значення:
+// Якщо відвідувач вводить "Адмін",
+// то prompt запитує пароль (не забудьте зберігти його у змінну для подальшої перевірки).
+
+// Якщо нічого не ввели або натиснули Cancel,
+// Вивести в alert строку "Скасовано"
+
+// В іншому випадку вивести в alert рядок "Я вас не знаю"
+
+// Пароль перевіряти так:
+
+// Якщо введено пароль "Я головний",
+// то вивести в alert рядок "Добрий день!",
+
+// в іншому випадку вивести в alert рядок "Невірний пароль!"
+
+
+//  const login = prompt("Введіть свій логін");
+//  console.log(login);
+
+// if (login === "Адмін") {
+//   const password = prompt("Введіть свій пароль");
+//   if (password === "Я головний") {
+//     alert("Добрий день!");
+//   } else {
+//     alert("Невірний пароль!");
+//   }
+// } else if (login === null || login === "") {
+//   alert("Скасовано");
+// } else {
+//   alert("Я вас не знаю");
+// }
+
+
+//Task 6
+// Використайте цикл while, щоб вивести в console всі числа від 0 до 20 включно.
+
+// let counter = 0;
+// while (counter <= 20) {
+//     console.log(counter)
+//     counter+=2;
+// }
+
+
+// Task 7
+// Напишіть функцію getNumbers(min, max), що приймає 2 параметри -
+// мінімальне і максимальне число відповідно.
+// Напишіть цикл всередині функції, який виводить у консоль
+// всі числа від max до min за спаданням.
+// Окрім цього, підрахуйте суму всіх парних чисел в цьому циклі
+// і поверніть її з функції.
+
+// function getNumbers(min, max) {
+//     let sum = 0;
+//     for (let i = max; i >= min; i--) {
+//         console.log(i);
+//         if (i % 2 === 0) {
+//             sum += i;
+//         }
+//     }
+//     return sum;
+// }
+// console.log(getNumbers(10,47))
